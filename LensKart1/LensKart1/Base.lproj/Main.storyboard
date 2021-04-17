@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LensKart1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8jy-fA-1RW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Poster" rowHeight="292" id="Oca-Lw-8RK" customClass="PosterCell" customModule="LensKart1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="292"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oca-Lw-8RK" id="4v2-rv-D63">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="292"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PDU-7l-F0n">
+                                                    <rect key="frame" x="20" y="11" width="374" height="209"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-lM-xsN">
+                                                    <rect key="frame" x="40" y="240" width="334" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="0jz-fe-yTn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PDU-7l-F0n" secondAttribute="trailing" id="Hbb-Nf-ETx"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="KwX-lM-xsN" secondAttribute="bottom" constant="20" id="Hdg-P7-ayK"/>
+                                                <constraint firstItem="KwX-lM-xsN" firstAttribute="top" secondItem="PDU-7l-F0n" secondAttribute="bottom" constant="20" id="Jrq-Qj-mTe"/>
+                                                <constraint firstItem="PDU-7l-F0n" firstAttribute="leading" secondItem="4v2-rv-D63" secondAttribute="leadingMargin" id="S5v-1u-S3v"/>
+                                                <constraint firstItem="PDU-7l-F0n" firstAttribute="top" secondItem="4v2-rv-D63" secondAttribute="topMargin" id="mu7-EW-vsN"/>
+                                                <constraint firstItem="KwX-lM-xsN" firstAttribute="leading" secondItem="4v2-rv-D63" secondAttribute="leadingMargin" constant="20" id="xzV-nv-SCc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KwX-lM-xsN" secondAttribute="trailing" constant="20" id="zLn-sW-sUM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="poster" destination="PDU-7l-F0n" id="H6p-ac-UB3"/>
+                                            <outlet property="title" destination="KwX-lM-xsN" id="QwW-hZ-FmU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8jy-fA-1RW" secondAttribute="trailing" id="1tn-FN-dEc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8jy-fA-1RW" secondAttribute="bottom" id="dUH-Uy-p5o"/>
+                            <constraint firstItem="8jy-fA-1RW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eD2-1T-USC"/>
+                            <constraint firstItem="8jy-fA-1RW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zoy-sz-hFc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="8jy-fA-1RW" id="QhV-WQ-1T4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

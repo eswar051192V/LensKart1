@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE3BC69A262A96A400C1DEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BC699262A96A400C1DEDF /* AppDelegate.swift */; };
+		FE3BC69C262A96A400C1DEDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BC69B262A96A400C1DEDF /* SceneDelegate.swift */; };
+		FE3BC69E262A96A400C1DEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BC69D262A96A400C1DEDF /* ViewController.swift */; };
+		FE3BC6A1262A96A400C1DEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3BC69F262A96A400C1DEDF /* Main.storyboard */; };
+		FE3BC6A3262A96A600C1DEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3BC6A2262A96A600C1DEDF /* Assets.xcassets */; };
+		FE3BC6A6262A96A600C1DEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3BC6A4262A96A600C1DEDF /* LaunchScreen.storyboard */; };
+		FE3BC6B1262A96A600C1DEDF /* LensKart1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BC6B0262A96A600C1DEDF /* LensKart1Tests.swift */; };
+		FE3BC6BC262A96A600C1DEDF /* LensKart1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BC6BB262A96A600C1DEDF /* LensKart1UITests.swift */; };
+		FE3BC6CD262A96DC00C1DEDF /* ApiCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BC6CC262A96DC00C1DEDF /* ApiCaller.swift */; };
+		FE3BC6D2262A98DB00C1DEDF /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = FE3BC6D1262A98DB00C1DEDF /* movies.json */; };
+		FE3BC6D7262A991100C1DEDF /* JsonFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3BC6D6262A991100C1DEDF /* JsonFileReader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE3BC6AD262A96A600C1DEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE3BC68E262A96A400C1DEDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE3BC695262A96A400C1DEDF;
+			remoteInfo = LensKart1;
+		};
+		FE3BC6B8262A96A600C1DEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE3BC68E262A96A400C1DEDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE3BC695262A96A400C1DEDF;
+			remoteInfo = LensKart1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE3BC696262A96A400C1DEDF /* LensKart1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LensKart1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3BC699262A96A400C1DEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE3BC69B262A96A400C1DEDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE3BC69D262A96A400C1DEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE3BC6A0262A96A400C1DEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE3BC6A2262A96A600C1DEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE3BC6A5262A96A600C1DEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE3BC6A7262A96A600C1DEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3BC6AC262A96A600C1DEDF /* LensKart1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LensKart1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3BC6B0262A96A600C1DEDF /* LensKart1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensKart1Tests.swift; sourceTree = "<group>"; };
+		FE3BC6B2262A96A600C1DEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3BC6B7262A96A600C1DEDF /* LensKart1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LensKart1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3BC6BB262A96A600C1DEDF /* LensKart1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensKart1UITests.swift; sourceTree = "<group>"; };
+		FE3BC6BD262A96A600C1DEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE3BC6CC262A96DC00C1DEDF /* ApiCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCaller.swift; sourceTree = "<group>"; };
+		FE3BC6D1262A98DB00C1DEDF /* movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		FE3BC6D6262A991100C1DEDF /* JsonFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileReader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE3BC693262A96A400C1DEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3BC6A9262A96A600C1DEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3BC6B4262A96A600C1DEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE3BC68D262A96A400C1DEDF = {
+			isa = PBXGroup;
+			children = (
+				FE3BC698262A96A400C1DEDF /* LensKart1 */,
+				FE3BC6AF262A96A600C1DEDF /* LensKart1Tests */,
+				FE3BC6BA262A96A600C1DEDF /* LensKart1UITests */,
+				FE3BC697262A96A400C1DEDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE3BC697262A96A400C1DEDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BC696262A96A400C1DEDF /* LensKart1.app */,
+				FE3BC6AC262A96A600C1DEDF /* LensKart1Tests.xctest */,
+				FE3BC6B7262A96A600C1DEDF /* LensKart1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE3BC698262A96A400C1DEDF /* LensKart1 */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BC699262A96A400C1DEDF /* AppDelegate.swift */,
+				FE3BC69B262A96A400C1DEDF /* SceneDelegate.swift */,
+				FE3BC69D262A96A400C1DEDF /* ViewController.swift */,
+				FE3BC6CC262A96DC00C1DEDF /* ApiCaller.swift */,
+				FE3BC6D6262A991100C1DEDF /* JsonFileReader.swift */,
+				FE3BC69F262A96A400C1DEDF /* Main.storyboard */,
+				FE3BC6D1262A98DB00C1DEDF /* movies.json */,
+				FE3BC6A2262A96A600C1DEDF /* Assets.xcassets */,
+				FE3BC6A4262A96A600C1DEDF /* LaunchScreen.storyboard */,
+				FE3BC6A7262A96A600C1DEDF /* Info.plist */,
+			);
+			path = LensKart1;
+			sourceTree = "<group>";
+		};
+		FE3BC6AF262A96A600C1DEDF /* LensKart1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BC6B0262A96A600C1DEDF /* LensKart1Tests.swift */,
+				FE3BC6B2262A96A600C1DEDF /* Info.plist */,
+			);
+			path = LensKart1Tests;
+			sourceTree = "<group>";
+		};
+		FE3BC6BA262A96A600C1DEDF /* LensKart1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE3BC6BB262A96A600C1DEDF /* LensKart1UITests.swift */,
+				FE3BC6BD262A96A600C1DEDF /* Info.plist */,
+			);
+			path = LensKart1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE3BC695262A96A400C1DEDF /* LensKart1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE3BC6C0262A96A600C1DEDF /* Build configuration list for PBXNativeTarget "LensKart1" */;
+			buildPhases = (
+				FE3BC692262A96A400C1DEDF /* Sources */,
+				FE3BC693262A96A400C1DEDF /* Frameworks */,
+				FE3BC694262A96A400C1DEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LensKart1;
+			productName = LensKart1;
+			productReference = FE3BC696262A96A400C1DEDF /* LensKart1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE3BC6AB262A96A600C1DEDF /* LensKart1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE3BC6C3262A96A600C1DEDF /* Build configuration list for PBXNativeTarget "LensKart1Tests" */;
+			buildPhases = (
+				FE3BC6A8262A96A600C1DEDF /* Sources */,
+				FE3BC6A9262A96A600C1DEDF /* Frameworks */,
+				FE3BC6AA262A96A600C1DEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE3BC6AE262A96A600C1DEDF /* PBXTargetDependency */,
+			);
+			name = LensKart1Tests;
+			productName = LensKart1Tests;
+			productReference = FE3BC6AC262A96A600C1DEDF /* LensKart1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE3BC6B6262A96A600C1DEDF /* LensKart1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE3BC6C6262A96A600C1DEDF /* Build configuration list for PBXNativeTarget "LensKart1UITests" */;
+			buildPhases = (
+				FE3BC6B3262A96A600C1DEDF /* Sources */,
+				FE3BC6B4262A96A600C1DEDF /* Frameworks */,
+				FE3BC6B5262A96A600C1DEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE3BC6B9262A96A600C1DEDF /* PBXTargetDependency */,
+			);
+			name = LensKart1UITests;
+			productName = LensKart1UITests;
+			productReference = FE3BC6B7262A96A600C1DEDF /* LensKart1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE3BC68E262A96A400C1DEDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					FE3BC695262A96A400C1DEDF = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					FE3BC6AB262A96A600C1DEDF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = FE3BC695262A96A400C1DEDF;
+					};
+					FE3BC6B6262A96A600C1DEDF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = FE3BC695262A96A400C1DEDF;
+					};
+				};
+			};
+			buildConfigurationList = FE3BC691262A96A400C1DEDF /* Build configuration list for PBXProject "LensKart1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE3BC68D262A96A400C1DEDF;
+			productRefGroup = FE3BC697262A96A400C1DEDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE3BC695262A96A400C1DEDF /* LensKart1 */,
+				FE3BC6AB262A96A600C1DEDF /* LensKart1Tests */,
+				FE3BC6B6262A96A600C1DEDF /* LensKart1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE3BC694262A96A400C1DEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3BC6A6262A96A600C1DEDF /* LaunchScreen.storyboard in Resources */,
+				FE3BC6A3262A96A600C1DEDF /* Assets.xcassets in Resources */,
+				FE3BC6D2262A98DB00C1DEDF /* movies.json in Resources */,
+				FE3BC6A1262A96A400C1DEDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3BC6AA262A96A600C1DEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3BC6B5262A96A600C1DEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE3BC692262A96A400C1DEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3BC6D7262A991100C1DEDF /* JsonFileReader.swift in Sources */,
+				FE3BC69E262A96A400C1DEDF /* ViewController.swift in Sources */,
+				FE3BC69A262A96A400C1DEDF /* AppDelegate.swift in Sources */,
+				FE3BC69C262A96A400C1DEDF /* SceneDelegate.swift in Sources */,
+				FE3BC6CD262A96DC00C1DEDF /* ApiCaller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3BC6A8262A96A600C1DEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3BC6B1262A96A600C1DEDF /* LensKart1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE3BC6B3262A96A600C1DEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3BC6BC262A96A600C1DEDF /* LensKart1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE3BC6AE262A96A600C1DEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE3BC695262A96A400C1DEDF /* LensKart1 */;
+			targetProxy = FE3BC6AD262A96A600C1DEDF /* PBXContainerItemProxy */;
+		};
+		FE3BC6B9262A96A600C1DEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE3BC695262A96A400C1DEDF /* LensKart1 */;
+			targetProxy = FE3BC6B8262A96A600C1DEDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE3BC69F262A96A400C1DEDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE3BC6A0262A96A400C1DEDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE3BC6A4262A96A600C1DEDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE3BC6A5262A96A600C1DEDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE3BC6BE262A96A600C1DEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE3BC6BF262A96A600C1DEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE3BC6C1262A96A600C1DEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LensKart1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Cart.LensKart1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE3BC6C2262A96A600C1DEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LensKart1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Cart.LensKart1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FE3BC6C4262A96A600C1DEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LensKart1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Cart.LensKart1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LensKart1.app/LensKart1";
+			};
+			name = Debug;
+		};
+		FE3BC6C5262A96A600C1DEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LensKart1Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Cart.LensKart1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LensKart1.app/LensKart1";
+			};
+			name = Release;
+		};
+		FE3BC6C7262A96A600C1DEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LensKart1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Cart.LensKart1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LensKart1;
+			};
+			name = Debug;
+		};
+		FE3BC6C8262A96A600C1DEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LensKart1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Cart.LensKart1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LensKart1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE3BC691262A96A400C1DEDF /* Build configuration list for PBXProject "LensKart1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3BC6BE262A96A600C1DEDF /* Debug */,
+				FE3BC6BF262A96A600C1DEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE3BC6C0262A96A600C1DEDF /* Build configuration list for PBXNativeTarget "LensKart1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3BC6C1262A96A600C1DEDF /* Debug */,
+				FE3BC6C2262A96A600C1DEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE3BC6C3262A96A600C1DEDF /* Build configuration list for PBXNativeTarget "LensKart1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3BC6C4262A96A600C1DEDF /* Debug */,
+				FE3BC6C5262A96A600C1DEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE3BC6C6262A96A600C1DEDF /* Build configuration list for PBXNativeTarget "LensKart1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE3BC6C7262A96A600C1DEDF /* Debug */,
+				FE3BC6C8262A96A600C1DEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE3BC68E262A96A400C1DEDF /* Project object */;
+}
